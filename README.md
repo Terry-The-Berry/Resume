@@ -3,8 +3,6 @@
 
   <body>
 
-  <title>PAGE TITLE</title>
-
   <p>This is Terry Dyer's resume!</p>
   <p>Contact me at: te951513@ucf.edu</p>
   <p>Find me on <a target="_blank" href="https://www.linkedin.com/in/terry-dyer-4309692b6/">LinkedIn</a></p>
@@ -16,9 +14,9 @@
   <p>Here is some <strong>strong</strong> and <em>emphasised</em> text.</p>
 
   <p>Here is a picture of my dog Waffles!</p>
-  <figure style="background-color: rgb(96, 51, 3);">
+  <figure>
     <img width=25% src="IMG_3690.jpeg">
-    <figcaption style="color: white;">Image of a brown labrodoodle looking at the camera</figcaption>
+    <figcaption>Image of Waffles, a brown labrodoodle, looking at the camera</figcaption>
   </figure>
 
   <p>Below is a simple table of some of my favorite games!</p>
