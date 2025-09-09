@@ -1,5 +1,5 @@
-# Terry-The-Berry-github.io
-<html>
+<!DOCTYPE html>
+<html lang="en">
 
   <body>
 
