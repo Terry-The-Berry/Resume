@@ -4,3 +4,8 @@ body{
   color: white;
   background-color: black;
 }
+
+table{
+  border-color: white;
+  background: black;
+}
