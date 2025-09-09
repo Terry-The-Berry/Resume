@@ -1,6 +1,10 @@
 <!DOCTYPE html>
 <html lang="en">
 
+  <head>
+    <link rel="stylesheet" href="style.css">
+  </head>
+
   <body>
 
   <p>This is Terry Dyer's resume!</p>
