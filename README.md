@@ -11,6 +11,12 @@
   <p>Contact me at: te951513@ucf.edu</p>
   <p>Find me on <a target="_blank" href="https://www.linkedin.com/in/terry-dyer-4309692b6/">LinkedIn</a></p>
 
+  <figure>
+    <img width=25% src="./Images/Portrait.png">
+    <figcaption>Image of Myself with my dog Waffles</figcaption>
+  </figure>
+
+
   <p>Here is me testing what does and does not work on github pages:</p>
 
   <button type="button">Empty button</button>
@@ -19,7 +25,7 @@
 
   <p>Here is a picture of my dog Waffles!</p>
   <figure>
-    <img width=25% src="IMG_3690.jpeg">
+    <img width=25% src="./Images/Waffles.jpeg">
     <figcaption>Image of Waffles, a brown labrodoodle, looking at the camera</figcaption>
   </figure>
 
