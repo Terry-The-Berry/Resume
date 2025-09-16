@@ -8,12 +8,16 @@ header{
   background-color: white;
   color: black;
 
-  
-  button{
-    background-color: blue;
-    padding: 5px;
+  div{
+    
+    display: inline-flex;
+    flex-wrap: nowrap;
+    
+    button{
+      background-color: blue;
+      padding: 5px;
+    }
   }
-  
 }
 
 body{
