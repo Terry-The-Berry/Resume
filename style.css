@@ -22,7 +22,7 @@ header{
 
 body{
   color: white;
-  background-color: black;
+  background-image: url("./Images/DirtBG.png");
 }
 
 tr{
