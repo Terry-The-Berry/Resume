@@ -49,7 +49,7 @@ main{
   background-image: url("./Resources/SpaceBG.png");
   background-size: 30%;
   background-position: 0px var(--fgposY);
-  background-attachment: fixed;
+  background-attachment:local;
   width: 100%;
 }
 
@@ -255,6 +255,14 @@ a[href*="http"]{
 
 
 @media screen and (max-width: 600px) {
+
+  html{
+    background-size: 25%;
+  }
+  main{
+    background-size:35%;
+  }
+
   #helloBox {
     flex-direction: column-reverse;
   }
