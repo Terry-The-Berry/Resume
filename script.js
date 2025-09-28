@@ -4,9 +4,38 @@
 https://stackoverflow.com/questions/49402471/how-to-use-javascript-variables-in-css
 Pretty nifty!*/
 var root = document.querySelector(':root');
+var showNav = false;
 
-const parallaxInterval = setInterval(parallaxBG,0);
+window.addEventListener('scroll', function(){
+    /* set background image position */
+    root.style.setProperty('--bgposY', `${window.pageYOffset*-0.25}px`);
+    root.style.setProperty('--mgposY', `${window.pageYOffset*-0.35}px`);
+    root.style.setProperty('--fgposY', `${window.pageYOffset*0.45}px`);
 
-function parallaxBG(){
-    root.style.setProperty('--bgpos', `${window.pageYOffset*-0.25}px`);
+    let header = document.getElementById("head");
+
+    if (window.pageYOffset>500) {
+        header.classList.remove("clear");
+    } else {
+        header.classList.add("clear");
+    }
+});
+
+/*
+window.addEventListener('resize', function() {
+    this.document.getElementById("waffle").innerHTML="TEST";
+});*/
+
+function toggleSidebar(){
+
+    if(showNav) {
+        showNav=false;
+        root.style.setProperty('--titleDisplay', `visible`);
+        root.style.setProperty('--navDisplay', `none`);
+        document.getElementById("name").setAttribute("margin-right",``)
+    } else {
+        showNav=true;
+        root.style.setProperty('--titleDisplay', `hidden`);
+        root.style.setProperty('--navDisplay', `flex`);
+    }
 }

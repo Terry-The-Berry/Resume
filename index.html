@@ -8,38 +8,88 @@
 
   <body>
 
-    <!--header bar-->
-    <header>
-      <h>Terry Dyer</h>
-      <!--right side buttons-->
-      <div>
-        <button>Home</button>
-        <button>Project 1</button>
-        <button>Project 2</button>
+    <!--
+    <div id="sidebar" class="sbClosed">
+      <p>Navigation</p>
+    </div>-->
+
+
+    <main>
+
+      <div id="helloBox">
+
+
+        <h1>hello, I'm</h1>
+
+        <figure id="portrait">
+          <img width=100% src="./Images/Portrait.png" alt="Image of Myself with my dog Waffles">
+        </figure>
       </div>
-    </header>
 
-    <figure id="portrait">
-      <img width=100% src="./Images/Portrait.png">
-      <figcaption>Image of Myself with my dog Waffles</figcaption>
-    </figure>
+      <!--header bar-->
+      <header id="head" class="clear">
+        <button id="waffle" onclick="toggleSidebar()"></button>
+        <h2 id="name">Terry Dyer</h2>
+        <!--right side buttons-->
+        <nav id="navigation">
+          <a href="index.html"><button>Home</button></a>
+          <a href="Subpages/Project1.html"><button>Project 1</button></a>
+          <a href="Subpages/Project2.html"><button>Project 2</button></a>
+        </nav>
+      </header>
 
-    <h1>hello.</h1>
 
-    <p>Here is a picture of my dog Waffles!</p>
-    <figure>
-      <img width=100% src="./Images/Waffles.png">
-      <figcaption>Image of Waffles, a brown labrodoodle, looking at the camera</figcaption>
-    </figure>
+      <div id="AboutMeBox" class="introductionBox">
+        <h3>About Me</h3>
 
-    <button type="button" href="Subpages/Project1.html">View Projects</button>
-    
+        <div>
+          <p>Personal Objective statement here</p>
 
-    <footer>
-      <p>Contact Me!</p>
-      <p>Email: te951513@ucf.edu</p>
-      <p>Find me on <a target="_blank" href="https://www.linkedin.com/in/terry-dyer-4309692b6/">LinkedIn</a></p>
-    </footer>
+          <figure>
+            <img width=100% src="./Images/Waffles.png">
+            <figcaption>Image of Waffles, a brown labrodoodle, looking at the camera</figcaption>
+          </figure>
+        </div>
+      </div>
+
+      <div id="SkillsBox" class="introductionBox">
+        <h3>Skills</h3>
+        <ul>
+          <li>Computer Programming
+            <ul>
+              <li><strong>Proficient in: Java, C, C++</strong>, Python, Unreal Engine Blueprints</li>
+              <li>Somewhat proficient in: Lua, GDScript</li>
+            </ul>
+          </li>
+          <li>Mathematics</li>
+          <li>Game Design</li>
+        </ul>
+        <p style="background-color: yellow; color:black"><em>Don't belive me?</em></p>
+      </div>
+
+
+      <div id="EducationBox" class="introductionBox">
+        <h3>Education</h3>
+        <p style="background-color: yellow; color:black">Education here</p>
+        <p>MAY 13, 2023</p>
+        <ul><strong>HIGH SCHOOL DIPLOMA</strong>, Holy Trinity Episcopal Academy</ul>
+      </div>
+
+
+      <div id="AwardsBox" class="introductionBox">
+        <h3>Awards & Honors</h3>
+        <p style="background-color: yellow; color:black">Awards here</p>
+      </div>
+
+      <footer>
+        <h3>Contact Me!</h3>
+        <p>Email: te951513@ucf.edu</p>
+        <p>Find me on <a target="_blank" href="https://www.linkedin.com/in/terry-dyer-4309692b6/">LinkedIn</a></p>
+        <p>See my games on <a target="_blank" href="https://itsterrytheberry.itch.io">itch.io</a></p>
+      </footer>
+
+
+    </main>
 
   </body>
   
