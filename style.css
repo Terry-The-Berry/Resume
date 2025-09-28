@@ -45,11 +45,11 @@ body{
   font-family: 'Courier New', Courier, monospace;
 }
 
-main{
+#fg{
   background-image: url("./Resources/SpaceBG.png");
   background-size: 30%;
   background-position: 0px var(--fgposY);
-  background-attachment:local;
+  background-attachment:fixed;
   width: 100%;
 }
 
@@ -254,7 +254,7 @@ a[href*="http"]{
 
 
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 800px) {
 
   html{
     background-size: 25%;
