@@ -6,11 +6,12 @@ Pretty nifty!*/
 var root = document.querySelector(':root');
 var showNav = false;
 
+
 window.addEventListener('scroll', function(){
     /* set background image position */
     root.style.setProperty('--bgposY', `${window.pageYOffset*-0.25}px`);
     root.style.setProperty('--mgposY', `${window.pageYOffset*-0.35}px`);
-    root.style.setProperty('--fgposY', `${window.pageYOffset*0.45}px`);
+    root.style.setProperty('--fgposY', `${window.pageYOffset*-0.45}px`);
 
     let header = document.getElementById("head");
 

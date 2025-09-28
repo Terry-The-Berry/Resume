@@ -155,9 +155,10 @@ button:active{
 
 
 #waffle{
-  color:white;
+  color:black;
   background: url("./Resources/Waffle.png");
   background-size: 100%;
+  background-color: white;
   image-rendering: pixelated;
   align-self: center;
   display: none;
@@ -247,7 +248,7 @@ a[href*="http"]{
   background-color:blue;
   width: 70%;
 }
-.introductionBox>ul, .introductionBox>p{
+.introductionBox>ul, .introductionBox>p, .introductionBox>li{
   text-align: left;
 }
 
