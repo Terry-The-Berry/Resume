@@ -7,6 +7,7 @@ var root = document.querySelector(':root');
 var showNav = false;
 
 
+
 window.addEventListener('scroll', function(){
     /* set background image position */
     root.style.setProperty('--bgposY', `${window.pageYOffset*-0.25}px`);
@@ -20,6 +21,16 @@ window.addEventListener('scroll', function(){
     } else {
         header.classList.add("clear");
     }
+});
+
+$(window).resize(function(){
+    document.getElementById("name").innerHTML = "hi";
+    /*
+    if(window.screenX/window.screenY < 1) {
+        document.style.getElementById("name").innerHTML = "testing";
+    } else {
+
+    }*/
 });
 
 /*

@@ -53,24 +53,9 @@ body{
   width: 100%;
 }
 
-/*
-#sidebar{
-  display: flex;
-  flex-direction: column;
-  align-content: center;
-  background-color: white;
-  color:black;
-  position:fixed;
-  left:0;
-  top:0;
-  bottom:0;
+main{
   width:100%;
-
-  transition-delay: 1s;
 }
-#sidebar.sbClosed{
-  display: none;
-}*/
 
 #helloBox{
   font-family: 'SloppyJoe', 'Brush Script MT', 'Arial';
@@ -245,22 +230,38 @@ a[href*="http"]{
   justify-content: space-around;
 }
 #AboutMeBox>div>p{
-  background-color:blue;
+  color:black;
+  background-color:yellow;
   width: 70%;
 }
-.introductionBox>ul, .introductionBox>p, .introductionBox>li{
+.introductionBox>ul, .introductionBox>p{
   text-align: left;
 }
 
 
+#dbm{
+  font-size: 3vw;
+  background-color: greenyellow;
+  border-style: solid;
+  border-color: white;
+  border-radius: 1vw;
+  border-width: 1vw;
+  height:10vw;
+  width:auto;
+  margin: 5%;
+}
 
-@media screen and (max-width: 800px) {
+
+@media screen and (max-width: 900px) {
 
   html{
-    background-size: 25%;
+    background-size: 30%;
   }
-  main{
-    background-size:35%;
+  body{
+    background-size:30%;
+  }
+  #fg{
+    background-size:50%;
   }
 
   #helloBox {
