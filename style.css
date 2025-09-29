@@ -77,15 +77,9 @@ header{
   font-size: 4vw;
   text-align: center;
   color:black;
-  outline: 0.5vw solid white;
   background-color: white;
   padding-left: 0vw;
   justify-content: right;
-  
-
-  /* transition */
-  transition: .25s;
-  transition-timing-function: linear;
   
   h2{
     font-family: 'SloppyJoe', 'Brush Script MT', 'Arial';
@@ -102,23 +96,17 @@ header{
     padding:0px;
     margin:0px;
     
-    a{
-      padding:0px;
-      margin:0px;
-      width: 100%;
-    }
   }
 }
 
-/* clear class for header */
+/* clear class for header (unused)
 header.clear{
   color: white;
   background-color: rgba(57, 69, 77,0.5);
 
-  /* transition */
   transition: .25s;
   transition-timing-function: linear;
-}
+}*/
 
 
 
@@ -137,7 +125,11 @@ button:hover{
 button:active{
   background-color:rgb(221, 221, 183);
 }
-
+.buttonContainer{
+  padding:0px;
+  margin:0px;
+  width: 100%;
+}
 
 #waffle{
   color:black;
@@ -177,10 +169,16 @@ figure{
   width:20%;
   margin:0;
   image-rendering:auto;
+  padding-bottom: 0%;
 }
 figcaption{
   font-size: 1vw;
   color: gainsboro;
+}
+#portrait>img{
+  /* fixes margin between image & portrait border */
+  width:100%;
+  margin-bottom:-1vw;
 }
 
 
@@ -252,11 +250,14 @@ a[href*="http"]{
 }
 
 
-@media screen and (max-width: 900px) {
+/* Determine screen mode (mobile vs. desktop) */
+/* instead of just guessing based of a media query for screen size, we instead use js to check
+if the screen is taller or wider. If it is taller, use mobile. otherwise, use desktop */
+html.mobile {
 
-  html{
-    background-size: 30%;
-  }
+  
+  background-size: 30%;
+  
   body{
     background-size:30%;
   }

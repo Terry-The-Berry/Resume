@@ -6,6 +6,10 @@ Pretty nifty!*/
 var root = document.querySelector(':root');
 var showNav = false;
 
+// Runs on site load
+document.addEventListener('DOMContentLoaded', function() {
+  setScreenMode();
+});
 
 
 window.addEventListener('scroll', function(){
@@ -23,20 +27,21 @@ window.addEventListener('scroll', function(){
     }
 });
 
-$(window).resize(function(){
-    document.getElementById("name").innerHTML = "hi";
-    /*
-    if(window.screenX/window.screenY < 1) {
-        document.style.getElementById("name").innerHTML = "testing";
-    } else {
 
-    }*/
+
+window.addEventListener('resize', function() {
+    setScreenMode();
 });
 
-/*
-window.addEventListener('resize', function() {
-    this.document.getElementById("waffle").innerHTML="TEST";
-});*/
+function setScreenMode(){
+    let doc = document.getElementById("html")
+    if(window.innerWidth/window.innerHeight < 1) {
+        doc.classList.add("mobile");
+    } else{
+        doc.classList.remove("mobile");
+    }
+}
+
 
 function toggleSidebar(){
 
@@ -44,10 +49,11 @@ function toggleSidebar(){
         showNav=false;
         root.style.setProperty('--titleDisplay', `visible`);
         root.style.setProperty('--navDisplay', `none`);
-        document.getElementById("name").setAttribute("margin-right",``)
+        document.getElementById("name").style.marginRight="0vw";
     } else {
         showNav=true;
         root.style.setProperty('--titleDisplay', `hidden`);
         root.style.setProperty('--navDisplay', `flex`);
+        document.getElementById("name").style.marginRight="-85vw";
     }
 }
