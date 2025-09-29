@@ -126,6 +126,7 @@ button:active{
   background-color:rgb(221, 221, 183);
 }
 .buttonContainer{
+  text-wrap-mode: nowrap;
   padding:0px;
   margin:0px;
   width: 100%;
@@ -228,12 +229,17 @@ a[href*="http"]{
   justify-content: space-around;
 }
 #AboutMeBox>div>p{
-  color:black;
-  background-color:yellow;
   width: 70%;
+  text-indent:3vw;
+  text-align: left;
+  font-size:2vw;
 }
 .introductionBox>ul, .introductionBox>p{
   text-align: left;
+}
+
+#AMpic>img{
+  width:70%;
 }
 
 
@@ -269,7 +275,7 @@ html.mobile {
     flex-direction: column-reverse;
   }
   header{
-    font-size: 6vw;
+    font-size: 9vw;
   }
   header>nav{
     display: var(--navDisplay);
@@ -298,7 +304,14 @@ html.mobile {
   figcaption{
     font-size: 2vw;
   }
+  #AboutMeBox>div>p{
+    font-size:4vw;
+    width:100%;
+  }
+  #AMpic{
+    display: none;
+  }
   footer{
-    font-size: 2.5vw;
+    font-size: 3.5vw;
   }
 }
