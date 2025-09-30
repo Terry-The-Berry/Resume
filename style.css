@@ -119,10 +119,10 @@ button{
   background-color:azure;
   color: black;
 }
-button:hover{
+button:hover, a.buttonContainer:hover{
   background-color: beige;
 }
-button:active{
+button:active, a.buttonContainer:active{
   background-color:rgb(221, 221, 183);
 }
 .buttonContainer{
@@ -130,6 +130,7 @@ button:active{
   padding:0px;
   margin:0px;
   width: 100%;
+  background-color:azure;
 }
 
 #waffle{
@@ -163,6 +164,7 @@ tr{
   background: black;
 }
 
+
 /* Styling for all images (portrait comes next)*/
 figure{
   /*margin: 10vh auto auto auto;/*center*/
@@ -190,11 +192,15 @@ figcaption{
 }
 
 footer{
+  font-size: 1vw;
   box-shadow:0px -3vw 5vw rgba(0,0,0,0.5);
   color: whitesmoke;
   background-color: rgb(77, 89, 97);
   padding-bottom: 3vh;
   margin-top: 10%;
+}
+footer>h3{
+  font-size:2vw;
 }
 
 strong{
@@ -205,6 +211,17 @@ strong{
 a{
   color:rgb(144, 255, 255);
   text-decoration: none;
+}
+a.buttonContainer{
+  display: block;
+  align-content: center;
+  color:black;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 2.5vw;
+  height: 100%;
+  width: 100%;
+  padding-left: 1vw;
+  padding-right: 1vw;
 }
 
 /* for links to other sites */
@@ -242,17 +259,26 @@ a[href*="http"]{
   width:70%;
 }
 
+/* styling for bullet lists */
+ul{
+  font-size: 2vw;
+  height:100;
+}
 
 #dbm{
-  font-size: 3vw;
+  justify-self: center;
+  display: block;
+  font-size: 2vw;
   background-color: greenyellow;
+  color:black;
   border-style: solid;
   border-color: white;
   border-radius: 1vw;
   border-width: 1vw;
-  height:10vw;
-  width:auto;
-  margin: 5%;
+  height:100%;
+  width:20vw;
+  margin: 3vw;
+  padding:2vw;
 }
 
 
@@ -289,10 +315,9 @@ html.mobile {
   }
   /* on smaller screens, give buttons a small outline, so it is easier to see where one button
   begins and the other ends */
-  button{
-    border-width: 0.25vw;
-    border-color: black;
-    border-style:solid;
+  a.buttonContainer{
+    font-size: 4vw;
+    border: 0.25vw solid black;
   }
   .introductionBox{
     padding:1vw;
@@ -311,7 +336,13 @@ html.mobile {
   #AMpic{
     display: none;
   }
+  ul{
+    font-size: 3vw;
+  }
   footer{
-    font-size: 3.5vw;
+    font-size: 2vw;
+  }
+  footer>h3{
+    font-size: 3vw;
   }
 }
