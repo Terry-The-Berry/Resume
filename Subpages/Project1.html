@@ -5,6 +5,7 @@
     <title>Project</title>
     <link rel="stylesheet" href="Project.css">
     <script src="../script.js"></script>
+    <meta charset="UTF-8">
   </head>
 
 
@@ -12,46 +13,51 @@
   
   <body>
     
-    <!--header bar-->
-    <header id="head" class="clear">
-      <button id="waffle" onclick="toggleSidebar()"></button>
-      <h2 id="name">Terry Dyer</h2>
-      <!--right side buttons-->
-      <nav id="navigation">
-        <a href="../index.html" class="buttonContainer"><button>Home</button></a>
-        <a href="Project1.html" class="buttonContainer"><button>Project 1</button></a>
-        <a href="Project2.html" class="buttonContainer"><button>Project 2</button></a>
-        <a href="Games.html" class="buttonContainer"><button>Games</button></a>
-      </nav>
-    </header>
+    <main>
+      <!--header bar-->
+      <header id="head" class="clear">
+        <button id="waffle" onclick="toggleSidebar()"></button>
+        <h2 id="name">Terry Dyer</h2>
+        <!--right side buttons-->
+        <nav id="navigation">
+          <a href="../index.html" class="buttonContainer">Home</a>
+          <a href="Project1.html" class="buttonContainer">Project 1</a>
+          <a href="Project2.html" class="buttonContainer">Project 2</a>
+          <a href="Games.html" class="buttonContainer">Games</a>
+        </nav>
+      </header>
 
-    <h1>Checksum Calculator</h1>
+      <h1>Checksum Calculator</h1>
 
-    <div>
-
-      <!--Image of the project-->
-      <img src="../Images/Checksum.png" alt="Image depicting a checksum calculation for a text file containing the letter A ten times.">
-      
-      <!--Description for the project-->
-      <p id="description">This was a project written in Java for my <em>Security In Computing</em> class. The objective of the program is to take a large text file and calculate a number that is unique to that file. For cyber security purposes, a file's number can be checked to "verify" it. If the file's checksum does not match the expected checksum, then the file has been modified.</p>
-
-      <!--Skills learned from the project-->
-      <h3>Skills learned</h3>
-      <ul>
-        <li>Command line input for Java programs</li>
-        <li>Basic Checksum calculations and logic</li>
-      </ul>
-
-    </div>
-
-    <footer>
-      <h3>Contact Me!</h3>
-      <p>Email: te951513@ucf.edu</p>
-      <p>Find me on <a target="_blank" href="https://www.linkedin.com/in/terry-dyer-4309692b6/">LinkedIn</a></p>
-      <p>See my games on <a target="_blank" href="https://itsterrytheberry.itch.io">itch.io</a></p>
-    </footer>
+      <div>
 
 
+        <div id="descBox">
+          <!--Image of the project-->
+          <img src="../Images/Checksum.png" alt="Image depicting a checksum calculation for a text file containing the letter A ten times.">
+
+          <!--Description for the project-->
+          <p id="description">This was a project written in Java for my <em>Security In Computing</em> class. The objective of the program is to take a large text file and calculate a number that is unique to that file. For cyber security purposes, a file's number can be checked to "verify" it. If the file's checksum does not match the expected checksum, then the file has been modified.</p>
+        </div>
+
+
+        <!--Skills learned from the project-->
+        <h3>Skills learned</h3>
+        <ul>
+          <li>Command line input for Java programs</li>
+          <li>Basic Checksum calculations and logic</li>
+        </ul>
+
+      </div>
+
+      <footer>
+        <h3>Contact Me!</h3>
+        <p>Email: te951513@ucf.edu</p>
+        <p>Find me on <a target="_blank" href="https://www.linkedin.com/in/terry-dyer-4309692b6/">LinkedIn</a></p>
+        <p>See my games on <a target="_blank" href="https://itsterrytheberry.itch.io">itch.io</a></p>
+      </footer>
+
+    </main>
     
   </body>
 
