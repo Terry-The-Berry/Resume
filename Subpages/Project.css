@@ -152,7 +152,8 @@ figcaption{
 }
 img{
   border-radius: 0.5vw;
-  width:30%;
+  width:40%;
+  height: 40%;
 }
 
 footer{
@@ -247,6 +248,9 @@ html.mobile {
   }
   div{
     margin:2vw;
+  }
+  #descBox{
+    flex-direction: column;
   }
   h3{
     font-size: 5vw;
