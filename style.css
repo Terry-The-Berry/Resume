@@ -255,6 +255,7 @@ a[href*="http"]{
   text-align: left;
 }
 #SkillsBox{
+  text-align: center;/* fix for mobile platforms */
   justify-items: center;
 }
 
